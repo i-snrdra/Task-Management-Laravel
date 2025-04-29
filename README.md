@@ -1,4 +1,4 @@
-# Task Management System
+# Simple Task Management
 
 A simple and efficient task management system built with Laravel and Backpack for Laravel. This application helps users manage their tasks effectively with features like task creation, status tracking, and role-based access control.
 
@@ -39,21 +39,21 @@ Follow these steps to set up the project locally:
 ### Steps
 
 1. **Clone the Repository**:
-    git clone https://github.com/your-username/task-management.git
-    cd task-management
+    - git clone https://github.com/your-username/task-management.git
+    - cd task-management
 2. **Install Dependencies**:
-    composer install
-    npm install
+   - composer install
+   - npm install
 3. **Set Up Environment**:
-    Copy the .env.example file to .env:
-    cp .env.example .env
-    Update the .env file with your database and other configurations.
+    - Copy the .env.example file to .env:
+    -     cp .env.example .env
+    - Update the .env file with your database and other configurations.
 4. **Generate Application Key**
-    php artisan key:generate
+    - php artisan key:generate
 5. **Run Migrations**
-    php artisan migrate
+    - php artisan migrate
 6. **Build**
-    npm run build
+    - npm run build
 
 ### License
 This project is licensed under the MIT License. See the LICENSE file for details.
