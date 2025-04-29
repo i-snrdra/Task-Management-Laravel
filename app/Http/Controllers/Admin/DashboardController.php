@@ -30,7 +30,7 @@ class DashboardController extends Controller
                 'inProgressTasks',
                 'completedTasks'
             ));
-        }
+        } else {
             $tasks = Task::where('user_id', $user->id)->get();
             $totalTasks = $tasks->count();
             $pendingTasks = $tasks->where('status', 'pending')->count();
@@ -60,5 +60,6 @@ class DashboardController extends Controller
                 'overdueTasks',
                 'stillPendingTasks'
             ));
+        }
     }
 }
