@@ -15,12 +15,8 @@ A simple and efficient task management system built with Laravel and Backpack fo
 ## Tech Stack
 
 - **Backend**: Laravel
-- **Frontend**: TailwindCSS
 - **Admin Panel**: Backpack for Laravel
-- **Database**: MySQL / PostgreSQL / SQLite
-- **Build Tool**: Vite
-- **Testing**: PHPUnit
-- **Caching & Queue**: Redis
+- **Database**: MySQL
 
 ---
 
