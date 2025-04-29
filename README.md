@@ -53,7 +53,6 @@ Follow these steps to set up the project locally:
 7. **Build**
     -     npm run build
 
----
 ### Screenshots
 ![image](https://github.com/user-attachments/assets/a6997ae0-1d6e-4f3e-b6f3-ced9fb32c9ee)
 ![image](https://github.com/user-attachments/assets/44582ec3-5f5f-4d62-b32e-306620f636bb)
