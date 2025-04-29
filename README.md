@@ -1,4 +1,4 @@
-# Task Management System
+# Simple Task Management
 
 A simple and efficient task management system built with Laravel and Backpack for Laravel. This application helps users manage their tasks effectively with features like task creation, status tracking, and role-based access control.
 
@@ -15,12 +15,8 @@ A simple and efficient task management system built with Laravel and Backpack fo
 ## Tech Stack
 
 - **Backend**: Laravel
-- **Frontend**: TailwindCSS
 - **Admin Panel**: Backpack for Laravel
-- **Database**: MySQL / PostgreSQL / SQLite
-- **Build Tool**: Vite
-- **Testing**: PHPUnit
-- **Caching & Queue**: Redis
+- **Database**: MySQL
 
 ---
 
@@ -39,21 +35,32 @@ Follow these steps to set up the project locally:
 ### Steps
 
 1. **Clone the Repository**:
-    git clone https://github.com/your-username/task-management.git
-    cd task-management
+    -     git clone https://github.com/your-username/task-management.git
+    -     cd task-management
 2. **Install Dependencies**:
-    composer install
-    npm install
+   -     composer install
+   -     npm install
 3. **Set Up Environment**:
-    Copy the .env.example file to .env:
-    cp .env.example .env
-    Update the .env file with your database and other configurations.
+    - Copy the .env.example file to .env:
+    -     cp .env.example .env
+    - Update the .env file with your database and other configurations.
 4. **Generate Application Key**
-    php artisan key:generate
+    -     php artisan key:generate
 5. **Run Migrations**
-    php artisan migrate
-6. **Build**
-    npm run build
+    -     php artisan migrate
+6. **Run Database Seeder**
+    -     php artisan db:seed
+7. **Build**
+    -     npm run build
+
+---
+### Screenshots
+![image](https://github.com/user-attachments/assets/a6997ae0-1d6e-4f3e-b6f3-ced9fb32c9ee)
+![image](https://github.com/user-attachments/assets/44582ec3-5f5f-4d62-b32e-306620f636bb)
+![image](https://github.com/user-attachments/assets/a17fd4bf-6b97-417b-9b5a-384a3ac4259f)
+
+
+---
 
 ### License
 This project is licensed under the MIT License. See the LICENSE file for details.
