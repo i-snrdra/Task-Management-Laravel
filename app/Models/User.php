@@ -48,6 +48,12 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+    public function setPasswordAttribute($value)
+    {
+        if ($value != null && $value !== '') {
+            $this->attributes['password'] = bcrypt($value);
+        }
+    }
     public function tasks()
     {
         return $this->hasMany(Task::class);

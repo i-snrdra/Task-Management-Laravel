@@ -59,7 +59,9 @@ class UserCrudController extends CrudController
     protected function setupCreateOperation()
     {
         CRUD::setValidation(UserRequest::class);
-        CRUD::setFromDb(); // set fields from db columns.
+        CRUD::setFromDb(); // ambil semua field dari DB
+    
+        // Role sebagai select dropdown
         CRUD::modifyField('role', [
             'name' => 'role',
             'label' => 'Role',
@@ -68,12 +70,16 @@ class UserCrudController extends CrudController
             'allows_null' => false,
             'default' => 'user',
         ]);
-
-        /**
-         * Fields can be defined using the fluent syntax:
-         * - CRUD::field('price')->type('number');
-         */
+    
+        // Password saat create wajib diisi
+        CRUD::modifyField('password', [
+            'name' => 'password',
+            'label' => 'Password',
+            'type' => 'password',
+            'attributes' => ['autocomplete' => 'new-password'],
+        ]);
     }
+    
 
     /**
      * Define what happens when the Update operation is loaded.
@@ -84,5 +90,13 @@ class UserCrudController extends CrudController
     protected function setupUpdateOperation()
     {
         $this->setupCreateOperation();
+        CRUD::modifyField('password', [
+            'name' => 'password',
+            'label' => 'Password',
+            'type' => 'password',
+            'attributes' => ['autocomplete' => 'new-password'],
+            'hint' => 'Kosongkan jika tidak ingin mengganti password',
+        ]);
     }
+    
 }
