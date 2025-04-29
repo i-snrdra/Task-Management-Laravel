@@ -95,7 +95,7 @@ class UserCrudController extends CrudController
             'label' => 'Password',
             'type' => 'password',
             'attributes' => ['autocomplete' => 'new-password'],
-            'hint' => 'Kosongkan jika tidak ingin mengganti password',
+            'hint' => 'Leave blank if you do not want to change the password.',
         ]);
     }
     
